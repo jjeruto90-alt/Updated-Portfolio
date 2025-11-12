@@ -1,0 +1,183 @@
+/* === Global Styles === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #fafafa;
+}
+
+/* === Header === */
+header {
+    background: url('https://cdn.pixabay.com/photo/2017/02/07/10/50/books-2046671_1280.jpg') center/cover no-repeat;
+    color: rgb(88, 196, 232);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f8c146;
+}
+
+.hero {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #f8c146;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ffdb70;
+}
+
+/* === Section === */
+.section {
+    padding: 80px 10%;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #222;
+    font-size: 2rem;
+}
+
+.section.light-bg {
+    background-color: #f0f0f0;
+}
+
+/* === About === */
+#about .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+#about img {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* === Skills === */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.skill {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* === Experience === */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline-item {
+    background: white;
+    border-left: 5px solid #f8c146;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-item h3 {
+    color: #333;
+}
+
+.timeline-item span {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* === Contact === */
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+/* === Footer === */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    #about .content {
+        flex-direction: column;
+    }
+    header {
+        height: 80vh;
+    }
+}
